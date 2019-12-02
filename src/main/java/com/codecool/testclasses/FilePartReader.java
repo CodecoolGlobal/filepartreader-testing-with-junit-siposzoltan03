@@ -47,7 +47,7 @@ public class FilePartReader {
     public void setup(String filePath, Integer fromLine, Integer toLine) {
         if (fromLine < 1) throw new IllegalArgumentException("fromLine cannot be less than 1");
         this.fromLine = getFromLine();
-        if (fromLine < toLine) throw new IllegalArgumentException("fromLine cannot be less than toLine");
+        if (fromLine > toLine) throw new IllegalArgumentException("fromLine cannot be less than toLine");
         setFilePath(filePath);
         setFromLine(fromLine);
         setToLine(toLine);

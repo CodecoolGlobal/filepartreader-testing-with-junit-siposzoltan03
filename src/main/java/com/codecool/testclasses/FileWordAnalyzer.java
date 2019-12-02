@@ -39,7 +39,7 @@ public class FileWordAnalyzer {
         return output;
     }
 
-    public List getStringWichPalindromes() {
+    public List getStringWhichPalindromes() {
         List<String> output = new ArrayList<>();
         for (String word : getContentAsList()) {
             if (isPalindrome(word)){
